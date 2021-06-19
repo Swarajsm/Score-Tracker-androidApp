@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#ffff00"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:layout_marginLeft="180sp"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200sp"
+        android:text="0"
+        android:textSize="18dp"
+        android:id="@+id/score_text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+2 Points"
+        android:id="@+id/two_points"
+        android:onClick="addTwo"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        android:id="@+id/three_points"
+        android:onClick="addThree"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="free Point"
+        android:id="@+id/free_points"
+        android:onClick="freePoint"
+        android:layout_marginTop="8dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ReSET"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/resetKey"
+        android:onClick="reset"
+        />
+
+</LinearLayout>
